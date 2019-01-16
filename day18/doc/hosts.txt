@@ -1,0 +1,6 @@
+172.25.254.2:root:westos
+172.25.254.3:root:westos
+172.25.254.4:root:westos
+172.25.254.5:root:westos
+172.25.254.6:root:westos
+172.25.254.7:root:westos
