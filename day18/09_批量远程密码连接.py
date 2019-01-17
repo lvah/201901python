@@ -46,7 +46,7 @@ if __name__ == '__main__':
     with open('doc/hosts.txt') as f:
         for line in f:
             # 172.25.254.1:root:westos
-            hostname, username, password = line.split(":")
+            hostname, username, password = line.strip().split(":")
             res = connect('hostname', hostname, username, password )
             print(hostname.center(50, '*'))
             print("主机名:", res)
