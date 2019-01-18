@@ -1,3 +1,4 @@
+172.25.254.250:kiosk:redhat
 172.25.254.2:root:westos
 172.25.254.3:root:westos
 172.25.254.4:root:westos
