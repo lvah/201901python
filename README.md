@@ -15,3 +15,4 @@
 - [day18: 常用模块difflib-sys-json使用及paramiko主机批量操作](https://github.com/lvah/201901python/tree/master/day18)
 
 - [day19: paramiko再次封装与多线程操作及案例](https://github.com/lvah/201901python/tree/master/day19)
+- [day20: 多线程操作及案例](https://github.com/lvah/201901python/tree/master/day20)
