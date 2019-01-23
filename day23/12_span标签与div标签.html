@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            /*边框的宽度， 颜色， 线条类型*/
+            border: 1px solid green;
+            width: 500px;
+            height: 200px;
+            border-radius:25px;
+            text-align: center;
+            padding-top: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--
+
+# 1. 什么是span？ 什么是div?
+- span标签是超文本标记语言（HTML）的行内标签，被用来组合文档中的行内元素。
+  span没有固定的格式表现。当对它应用样式时，它会产生视觉上的变化。
+- DIV标签，称为区隔标记。作用是设定字、画、表格等的摆放位置。当你把文字、
+  图象，或其他的放在 DIV 中，它可称作为“DIV block”，或“DIV element”
+  或“css-layer”，或干脆叫“layer”。而中文我们把它称作“层次”。
+
+
+
+# 2.div和span的区别
+span==h1
+1). 相同点:
+    DIV 和 SPAN 元素最大的特点是默认都没有对元素内的对象进行任何格式化渲染。
+    主要用于应用样式表。
+2). 不同点:
+    两者最明显的区别在于DIV是块元素，而SPAN是行内元素(也译作内嵌元素)。
+3). 具体应用：
+    # 1.所谓块元素，是以另起一行开始渲染的元素，行内元素则不需另起一行，
+    测试一下下面的代码你会有更形象的理解：
+    *********
+    # 块级元素， 里面可以包含行内元素和块级元素;
+    # 行内元素, 里面只能包含行内元素;
+    *********
+    # 测试<span>紧跟前面的"测试"显示</span><div>这里会另起一行显示</div>
+    # *****2.块元素和行内元素也不是一成不变的，通过定义CSS的display属性值可以互相转化，如：
+    # 测试<div style="display:inline">紧跟前面的"测试"显示
+    </div><span style="display:block">这里会另起一行显示</span>
+    # 提示：如果不对DIV元素定义任何CSS属性，其显示效果相当于P元素。
+
+
+-->
+
+
+
+
+<div>hello</div>
+
+<span>hello</span>
+
+
+</body>
+</html>

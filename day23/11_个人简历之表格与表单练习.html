@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        /*
+        1. 标签选择器: h1{  xxxx }
+        2. id选择器:   设置: <a id="唯一的id名">    设置样式: #id名{ xxxx }
+        3. class选择器: 设置: <a class="class名">  设置样式: .类名{ xxxx }
+        4. 属性选择器: input[type="text"]{ xxxx }
+
+
+        */
+
+        /*<!--不让所有的input标签宽度为100-%-->*/
+        /*input{*/
+            /*width: 100%;*/
+        /*}*/
+
+        input[type="text"] {
+            width: 100%;
+            border: none;
+            height: 30px
+        }
+        input[type='email']{
+            width: 100%;
+            border: none;
+            height: 30px;
+        }
+
+
+        /*需求: 关闭的按钮为红色，添加的按钮为绿色 */
+        input[type='button']{
+            color: white;  /*字体颜色*/
+            border: 0;    /*去掉边框 */
+            font-size: 16px;
+            text-align: center;  /*字体居中*/
+        }
+        #add{
+            background-color: #4CAF50;
+        }
+
+        #close{
+            background-color: #f44336;
+        }
+
+
+        /*类选择器*/
+        .addColor{
+            background: snow;
+        }
+
+
+        #footer{
+            text-align: right;
+        }
+    </style>
+
+
+</head>
+<body>
+<br/>
+<br/>
+<h1 style="text-align: center">个人简介</h1>
+<hr/>
+<br/>
+<br/>
+
+<table id="firstTable" border="1px" width="50%" align="center" cellpadding="10px" cellspacing="0">
+    <!--创建9行4列的表格-->
+    <tr>
+        <td class="addColor">姓名</td>
+        <td><input type="text" placeholder="Name"></td>
+        <td class="addColor">性别</td>
+        <td>
+            <select>
+                <option>男</option>
+                <option>女</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="addColor">手机号码</td>
+        <td><input type="text"></td>
+        <td class="addColor">电子邮箱</td>
+        <td><input type="email"></td>
+    </tr>
+    <tr>
+        <td class="addColor">教育程度</td>
+        <td><input type="text"></td>
+        <td class="addColor">工作职位</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="addColor">工作城市</td>
+        <td><input type="text"></td>
+        <td class="addColor">期望薪资</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="addColor">自我介绍</td>
+        <!--合并三列-->
+        <td colspan="3"><input type="text"></td>
+
+    </tr>
+    <tr>
+        <td class="addColor">特长</td>
+        <!--合并三列-->
+        <td colspan="3"><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="addColor">地址</td>
+        <!--合并三列-->
+        <td colspan="3"><input type="text"></td>
+
+    </tr>
+    <tr>
+
+        <td colspan="4"></td>
+    </tr>
+    <tr id="footer">
+
+        <td colspan="4">
+            <input id="add" type="button" value="添加">
+            <input id="close" type="button" value="关闭">
+
+
+        </td>
+    </tr>
+
+</table>
+
+
+</body>
+</html>

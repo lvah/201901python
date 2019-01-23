@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--确定创建5行7列的表格
+
+1. border: 边框宽度
+2. width="50%"： 表格宽度
+3, align="center"
+4. cellpadding="10"  ---表格内边距(比阿哥里面的文字和边框的距离)
+5. cellspacing="0 -----表格的外边距(边框为实心)
+6. style="text-align: center" --- 表格里面文字居中
+-->
+
+
+<table border="1px" width="50%" align="center" cellpadding="10" cellspacing="0" style="text-align: center">
+    <tr>
+        <!--合并5行-->
+        <td rowspan="5">学生</td>
+        <!--合并6列-->
+        <td colspan="6">学生信息表</td>
+
+    </tr>
+
+    <tr>
+        <!--表头: th标签可以自动加粗并居中-->
+        <th>序号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>电话</th>
+        <th>住址</th>
+    </tr>
+
+
+    <tr>
+
+        <td>1</td>
+        <td>张三</td>
+        <td>男</td>
+        <td>23</td>
+        <td>110</td>
+        <td>雁塔</td>
+    </tr>
+
+
+    <tr>
+
+        <td>1</td>
+        <td>张三</td>
+        <td>男</td>
+        <td>23</td>
+        <td>110</td>
+        <td>雁塔</td>
+    </tr>
+
+    <tr>
+
+        <td>1</td>
+        <td>张三</td>
+        <td>男</td>
+        <td>23</td>
+        <td>110</td>
+        <td>雁塔</td>
+    </tr>
+
+
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1>用户登陆</h1>
+
+<!--form表单-->
+<form>
+    <!--文本域-->
+    用户名: <input type="text"><br/>
+    <!--密码域-->
+    密码: <input type="password"><br/>
+    个人简介: <textarea rows="10" cols="100"></textarea><br/>
+    <!--提交文件-->
+    个人简历提交: <input type="file"><br/>
+
+    出生日期: <input type="date"> <br/>
+
+    <!--单选按钮-->
+    <!--name是为了确保用户单选的范围-->
+    性别: 男<input type="radio" name="gender"> 女<input type="radio" name="gender"><br/>
+    专业: 计算机<input type="radio" name="major"> 软件工程<input type="radio" name="major"><br/>
+
+
+    <!--多选按钮-->
+    爱好: <input type="checkbox" name="hobbie"> 编程
+    <input type="checkbox" name="hobbie"> 篮球
+    <input type="checkbox" name="hobbie"> 羽毛球<br/>
+
+
+    <!--下拉列表-->
+    城市: <select>
+    <option>----选择城市----</option>
+    <option>西安</option>
+    <option>成都</option>
+    <option>北京</option>
+</select><br/>
+
+
+    <!--围绕数据的标签-->
+    <fieldset>
+        <legend>个人简介</legend>
+        <h1>登陆</h1>
+        <hr/>
+          <!--文本域-->
+    用户名: <input type="text"><br/>
+    <!--密码域-->
+    密码: <input type="password"><br/>
+
+    </fieldset>
+
+
+      <input type="submit" value="登陆">
+    <input type="reset" value="重置">
+</form>
+
+
+
+
+
+</body>
+</html>

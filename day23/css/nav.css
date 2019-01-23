@@ -1,0 +1,24 @@
+
+ul {
+    list-style-type: none;
+    text-align: center
+}
+ul li {
+    display: inline-block;
+    width: 20%;
+    height: 30px;
+    background: green;
+    padding-top: 15px;
+    font-size: 18px;
+    /*text-decoration: none;*/
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+/*鼠标经过时产生的变化*/
+li:hover {
+    background: #4CAF50;
+    font-size: 20px;
+}
