@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function checkForm() {
+            // # 1. 获取用户名提交的内容;[object HTMLInputElement]
+            var user = document.getElementById('user').value;
+            // alert(user);
+
+
+            //    2. 判断用户名是否为6～8个字符;
+            var userLen = user.length;
+            // alert(userLen >=6 && userLen<=8);
+            if (userLen <= 6 || userLen >= 8) {
+                alert("用户名不合法");
+                return false;
+
+            }
+
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+<!--
+1. 需求:
+    1). 用户登录时， 会填写一些信息, 如果所有的请求都提交给服务器处理， 服务端压力较大;
+    2). 在前端先校验， (防君子不防小人);
+    - 后端也需要校验
+
+
+-->
+
+<!--
+2. 实现步骤:
+    1. 确定事件类型onsubmit(常见事件类型的网址: http://www.w3school.com.cn/js/js_htmldom_events.asp);
+    2. 对这个事件绑定一个函数(执行的操作写在函数里面);
+    3. 函数的核心功能: 校验用户名是否为空?
+        1). 获取输入用户名标签提交的内容；
+        2). if判断用户名是否为空?
+        3). 如果数据合法， 继续执行， 提交表单；
+        4). 如果数据不合法， 不让表单提交? (显示弹出框报错) --- alert
+
+
+-->
+
+<!--当提交信息的时候， 执行函数checkForm()-->
+<form onsubmit="return checkForm()">
+    <input type="text" name='user' id="user" placeholder="用户名(6~8个字符)">
+    <input type="password" name='passwd' id="passwd" placeholder="密码(6位)">
+    <input type="submit" value="登录">
+</form>
+
+
+</body>
+</html>

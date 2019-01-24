@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+
+        }
+
+
+        /*div {*/
+            /*border: 1px solid red;*/
+        /*}*/
+
+
+        .header {
+            width: 1920px;
+            height: 100px;
+            margin: 0 auto;
+
+        }
+
+
+        .logo{
+            background: url("img/logo.png");
+            width: 174px;
+            height: 79px;
+            float: left;
+            margin-left: 200px;
+            margin-top: 10px;
+        }
+        .service{
+            margin-top: 20px;
+               background: url("img/service.png");
+            width: 321px;
+            height: 55px;
+            float: right;
+            margin-right: 200px;
+
+        }
+
+
+        .content {
+            width: 1920px;
+            height: 600px;
+            background: url("https://img.vipstatic.com/upload/flow/2018/06/15/157/15290438491111.jpg");
+            background-repeat: no-repeat; /*图片不能让嗯填充满的时候， 不重复显示*/
+            margin: 0 auto;
+        }
+
+
+        .main {
+            width: 360px;
+            height: 450px;
+            float: right; /*将div标签向右对齐*/
+            margin-right: 150px;
+            margin-top: 50px;
+            padding: 20px 20px 30px 20px; /*内边距: 上右下左*/
+            background: white;
+            text-align: center;
+
+        }
+
+
+        #registerText {
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+
+        #loginText {
+            float: right; /*div向右偏移*/
+            display: inline; /*块级元素变为行内元素*/
+        }
+
+        .main input {
+            margin-top: 20px;
+            height: 40px;
+            width: 300px;
+            border: 1px solid darkgray;
+            border-radius: 10px;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+
+        .main .code {
+            width: 140px;
+        }
+
+
+        .main input[type='checkbox'] {
+            width: 2px;
+            height: 2px;
+        }
+
+        .main input[type='submit'] {
+            background: #f10180;
+            color: white;
+            border: 1px solid #f10180;
+            text-align: center;
+        }
+
+
+        .main a {
+            text-decoration: none;
+            color: #1d94d1;
+            font-size: 13px;
+        }
+
+        .main #loginText a{
+            color: #f10180;
+            font-size: 15px;
+        }
+
+        .footer {
+            width: 1920px;
+            height: 100px;
+            text-align: center;
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+<!--导航栏部分(logo/图标)-->
+<div class="header">
+
+    <div class="logo">
+
+    </div>
+
+    <div class="service">
+
+    </div>
+
+
+</div>
+<!--页面主体-->
+<div class="content">
+    <!--注册表单界面-->
+    <div class="main">
+        <span id="registerText">会员注册</span>
+        <div id="loginText">已注册可<a href="#">直接登录</a></div>
+        <hr/>
+        <input type="text" placeholder="请输入电话号码"><br/>
+        <input type="text" class="code" placeholder="请输入验证码"> &nbsp;&nbsp;
+        <input type="button" class="code" value="获取验证码">
+        <br/>
+        <input type="password" placeholder="请输入密码"><br/>
+        <input type="password" placeholder="请重新输入密码"><br/>
+
+        <input type="checkbox">我已阅读并接受以下条款：
+        <a href="#">《唯品会服务条款》 </a>
+        <a href="#">《隐私条款》 </a>
+        <a href="#">《唯品支付用户服务协议》 </a>
+        <a href="#">《唯品信用服务协议》 </a>
+
+        <br/>
+
+        <input type="submit" value="立即注册"><br/>
+
+
+    </div>
+
+
+</div>
+
+
+<!--脚标-底部设置(商标/备案信息)-->
+<div class="footer">
+    Copyright 2008-2018 vip.com，All Rights Reserved ICP证：粤 B2-20080329
+
+</div>
+
+</body>
+</html>

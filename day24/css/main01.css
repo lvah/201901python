@@ -1,0 +1,55 @@
+
+body {
+    margin: 0; /*去掉默认的外边距*/
+    padding: 0; /*去掉默认的内边距*/
+}
+
+.content {
+    background-color: pink;
+    margin-top: 200px;
+    height: 400px;
+
+}
+
+
+.main {
+    /*border: 1px solid red;*/
+    width: 600px;
+    height: 400px;
+    margin: 0 auto; /*块级标签居中的方式*/
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+
+.main h1 {
+    font-size: 60px;
+    color: white;
+}
+
+
+input[type='text'], input[type='password'] {
+    width: 400px;
+    height: 46px;
+    border-radius: 25px;
+    border: 0;
+    margin-top: 15px;
+    text-align: center;
+
+
+}
+input[type='submit'] {
+    background: #f31239;
+    border-radius: 25px;
+    margin-top: 15px;
+    width: 200px;
+    height: 46px;
+    border: 0;
+    color: white;
+
+}
+
+input:hover {
+    background: deeppink;
+}

@@ -19,3 +19,4 @@
 - [day21: 进程与进程池操作及案例多进程备份文件](https://github.com/lvah/201901python/tree/master/day21)
 - [day22: 协程与socket操作实现简易web服务器和基于TCP/UDP的聊天服务器客户端和服务端](https://github.com/lvah/201901python/tree/master/day22)
 - [day23: socketserver操作_html_css](https://github.com/lvah/201901python/tree/master/day23)
+- [day24:html与CSS实战之实现登录与注册界面_实现导航栏_实现分页与JS常用实践 ](https://github.com/lvah/201901python/tree/master/day24)

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function checkAll() {
+            //1. 获取全选框对象;
+            var checkAllEle = document.getElementById('checkAll');
+
+            // alert(checkAllEle.checked);
+            //2. 判断当前的复选框状态;
+            //    如果状态为选中, 设置所有的单选框为选中;
+            var checkOnes = document.getElementsByName('checkOne');
+            if (checkAllEle.checked) {
+
+                // 依次遍历所有的单选框， 设置状态为选中;
+                for (var i = 0; i < checkOnes.length; i++) {
+                    checkOnes[i].checked = true;
+
+                }
+            } else {
+                // 依次遍历所有的单选框， 设置状态为选中;
+                for (var j = 0; j < checkOnes.length; j++) {
+                    checkOnes[j].checked = false;
+
+                }
+            }
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+<table style="width: 600px;margin: 0 auto;margin-top: 50px;text-align: center;" border="1px">
+    <th style="text-align: center;" colspan="5">
+        <input type="button" value="添加">
+        <input type="button" value="删除">
+    </th>
+    <tr>
+
+        <th><input type="checkbox" id="checkAll" onclick="checkAll()"></th>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checkOne"></td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checkOne"></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checkOne"></td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checkOne"></td>
+        <td>4</td>
+        <td>4</td>
+        <td>1</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="checkOne"></td>
+        <td>5</td>
+        <td>5</td>
+        <td>1</td>
+        <td>5</td>
+    </tr>
+</table>
+
+
+</body>
+</html>

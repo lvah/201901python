@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function checkUser() {
+            // # 1. 获取用户输入夫人用户名;
+            var user = document.getElementById('user').value;
+            //  2. 判断用户名长度;
+            var userLen = user.length;
+            if (userLen <= 6 || userLen >= 8) {
+                // document.getElementById('userTip').innerText = "用户名不合法";
+                document.getElementById('userTip').innerHTML = "<span style='color: red'>用户名不合法</span>"
+
+
+            } else {
+                document.getElementById('userTip').innerHTML = ""
+            }
+
+
+        }
+
+
+        function checkPwd() {
+            // # 1. 获取用户输入密码;
+            var pwd = document.getElementById('passwd').value;
+            //  2. 判断密码长度;
+            var pwdLen = pwd.length;
+
+            // === 值和类型都相等时返回true; == ---> '8' == 8 (true)
+            if (pwdLen !== 6) {
+                // document.getElementById('userTip').innerText = "用户名不合法";
+                document.getElementById('pwdTip').innerHTML = "<span style='color: red'>密码不合法</span>"
+
+
+            }
+            else {
+                document.getElementById('pwdTip').innerHTML = ""
+            }
+
+
+        }
+
+
+        function showUserTip() {
+
+            document.getElementById('userTip').innerHTML = '<span style="color: darkgray"> ' +
+                '用户名为6～8位</span>'
+        }
+
+
+        function showPwdTip() {
+            document.getElementById('pwdTip').innerHTML = '<span style="color: darkgray"> ' +
+                '密码必须为6位</span>'
+        }
+
+    </script>
+
+
+</head>
+<body>
+
+
+<form>
+    <!--onblur---离焦事件-->
+    <input type="text" name='user' onfocus="showUserTip()" onblur="checkUser()" id="user" placeholder="用户名(6~8个字符)">
+    <span id="userTip"></span><br/>
+    <input type="password" name='passwd' onfocus="showPwdTip()" onblur="checkPwd()" id="passwd" placeholder="密码(6位)">
+    <span id="pwdTip"></span>
+    <br/>
+    <input type="submit" value="登录">
+</form>
+
+</body>
+</html>
