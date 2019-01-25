@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function changeCity() {
+            // 1. 如何存储省份与城市之间的关系(数组);
+            // cites = [["xian", ""], [], []]
+            var provinces = new Array(3);
+            provinces[0] = new Array("西安", "咸阳", "宝鸡");
+            provinces[1] = new Array("成都", "乐山", "绵阳");
+            provinces[2] = new Array("济南", "青岛", "威海");
+
+
+            // 2. 获取用户选择的省份;
+            var choiceProvince = document.getElementById('province').value;
+
+
+            //    8. 获取用户选择的城市的select节点;
+            var selectEleNode = document.getElementById('city');
+            //  3.遍历用户选择省份对应的城市;
+            //  0 1 2
+
+            // 9. 清空上一次对于城市添加的所有option元素;
+            selectEleNode.length = 0;
+            for (var i = 0; i < provinces.length; i++) {
+                // 4. 判断用户选择的省份;
+                // alert(type(choiceProvince), type(i));
+                if (choiceProvince == i) {
+                    // 如果相同， 便利该省份下的所有城市;
+                    for (var j = 0; j < provinces[i].length; j++) {
+
+                        // 5. 创建城市文本节点;
+                        var textNode = document.createTextNode(provinces[i][j]);
+
+                        // 6. 创建option的元素节点;
+                        var optionEleNode = document.createElement("option");
+
+
+                        // 7. 将城市的文本节点追加到option节点中;
+                        optionEleNode.appendChild(textNode);
+
+                        // 9. 添加option节点到select城市节点中;
+                        selectEleNode.appendChild(optionEleNode);
+                    }
+
+
+                }
+
+
+            }
+
+
+        }
+
+
+    </script>
+
+
+</head>
+<body>
+
+
+<!--
+
+1. 需求:
+    点击一个按钮， 动态实现添加城市;
+
+[root@foundation0 day25]# cat /tmp/hello
+## 1. 需求分析
+    省市的二级联动
+## 2. 技术分析
+## 3. 步骤实现
+- 1). 确定事件类型onchange, 并为其绑定一个函数;
+- 2). 修改下拉列表内容;
+- 2-1). 获取用户选择的省份;
+- 2-2). 创建一个二维数组， 用来存储省份和城市的对应关系;
+- 2-3). 遍历二维数组中的省份；
+- 2-4). 遍历时省份编号和用户选择的省份编号进行比较，
+- 2-5). 如果相同， 遍历该省份下的所有城市;
+        - 将每一个城市以<option>城市名</option>添加到select里面去;
+- 2-6). 如果不相同， 继续循环遍历省份;
+-->
+<div class="main">
+    <form>
+        <span>籍贯： </span>
+        <select id="province" onchange="changeCity()">
+            <option>---选择省份---</option>
+            <option value="0">陕西省</option>
+            <option value="1">四川省</option>
+            <option value="2">山东省</option>
+        </select>
+        <!--选择城市-->
+        <select id="city">
+            <option>---选择城市---</option>
+            <!--<option>"西安"</option>-->
+
+        </select>
+    </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function addCity() {
+            //  1). 获取用户在input表单输入框中填写的信息;
+            var city = document.getElementById('city').value;
+            if (city) {
+
+                //    2. 创建一个城市的文本节点;
+                var textNode = document.createTextNode(city);  // "shanghai"
+                //    3. 创建一个li的元素节点;
+                var liEleNode = document.createElement('li');   // <li></li>
+                //    4. 将文本节点添加到li元素节点里面去;
+                liEleNode.appendChild(textNode);    // <li>Shanghai</li>
+
+                //    5. 将li的整体对象添加到ul标签里面去;
+                var ulEleNode = document.getElementById("ul_city");
+                ulEleNode.appendChild(liEleNode);
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+<!--
+1. 需求:
+    点击一个按钮， 动态实现添加城市;
+
+2. 实现步骤:
+    1. 确定事件类型onclick
+    2. 对于事件绑定一个函数addLiElement()
+        1) 获取到用户在input输入框中填写的信息;
+            city  = document.getElementById("city").value
+            city  = document.getElementsByName("city")[0].value
+        2). 创建一个城市的文本节点；document.createTextNode('xxxx')
+        3). 创建一个li的元素节点; document.createElement('xxxx')
+        4). 将文本节点添加到li元素节点里面去;
+        5). 将整体添加到ul标签里面去;
+            使用appendChild()来添加子节点;
+-->
+
+<div class="main">
+    <form>
+        <!--required表单必须填写内容-->
+        <input type="text" id='city' placeholder="请输入添加的城市" required>
+        <input type="button" value="添加城市" onclick="addCity()">
+
+    </form>
+
+
+    <ul id="ul_city">
+        <li>上海</li>
+        <li>北京</li>
+        <li>西安</li>
+    </ul>
+
+
+</div>
+
+</body>
+</html>
