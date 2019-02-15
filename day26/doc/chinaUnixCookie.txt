@@ -1,0 +1,11 @@
+# Netscape HTTP Cookie File
+# http://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file!  Do not edit.
+
+bbs.chinaunix.net	FALSE	/	FALSE	1550217767	ndfU_2132_checkfollow	1
+bbs.chinaunix.net	FALSE	/	FALSE	1550304138	ndfU_2132_lastact	1550217539%09member.php%09logging
+bbs.chinaunix.net	FALSE	/	FALSE	1581753737	ndfU_2132_lastcheckfeed	30241706%7C1550217539
+bbs.chinaunix.net	FALSE	/	FALSE	1552809738	ndfU_2132_lastvisit	1550213939
+bbs.chinaunix.net	FALSE	/	FALSE	1552809738	ndfU_2132_saltkey	VDPc0W9o
+bbs.chinaunix.net	FALSE	/	FALSE	1550304137	ndfU_2132_sid	eN9N5r
+bbs.chinaunix.net	FALSE	/	FALSE	1581753737	ndfU_2132_ulastactivity	35ecthbp6gXDN27zVw%2BiUVmW%2FbYcqouhGP97oNhKoDkpOZ4ln3lG
