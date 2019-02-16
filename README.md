@@ -8,6 +8,7 @@
 - [day15: 2048游戏及Anaconda环境使用](https://github.com/lvah/201901python/tree/master/day15)
 
 
+
 - [day16: mysql数据库基本操作， pymysql使用及银行转账功能实现](https://github.com/lvah/201901python/tree/master/day16)
 
 - [day17: 常用模块time-datetime-psutil-openpyxl使用及python与Excel的操作](https://github.com/lvah/201901python/tree/master/day17)
@@ -23,3 +24,4 @@
 
 - [day25:js总结与正则表达式_案例实现贴吧图片批量下载 ](https://github.com/lvah/201901python/tree/master/day25)
 - [day26:urllib与requests讲解及反爬虫策略 ](https://github.com/lvah/201901python/tree/master/day26)
+- [day27:requests与BS4的应用案例 ](https://github.com/lvah/201901python/tree/master/day27)
