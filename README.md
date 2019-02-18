@@ -25,3 +25,4 @@
 - [day25:js总结与正则表达式_案例实现贴吧图片批量下载 ](https://github.com/lvah/201901python/tree/master/day25)
 - [day26:urllib与requests讲解及反爬虫策略 ](https://github.com/lvah/201901python/tree/master/day26)
 - [day27:requests与BS4的应用案例 ](https://github.com/lvah/201901python/tree/master/day27)
+- [day28:xpath_wordcloud_spiderMoocProject ](https://github.com/lvah/201901python/tree/master/day28)
