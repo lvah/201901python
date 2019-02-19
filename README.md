@@ -26,3 +26,4 @@
 - [day26:urllib与requests讲解及反爬虫策略 ](https://github.com/lvah/201901python/tree/master/day26)
 - [day27:requests与BS4的应用案例 ](https://github.com/lvah/201901python/tree/master/day27)
 - [day28:xpath_wordcloud_spiderMoocProject ](https://github.com/lvah/201901python/tree/master/day28)
+- [day29:Scrapy爬虫框架之项目案例](https://github.com/lvah/201901python/tree/master/day29)
