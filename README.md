@@ -27,3 +27,4 @@
 - [day27:requests与BS4的应用案例 ](https://github.com/lvah/201901python/tree/master/day27)
 - [day28:xpath_wordcloud_spiderMoocProject ](https://github.com/lvah/201901python/tree/master/day28)
 - [day29:Scrapy爬虫框架之项目案例](https://github.com/lvah/201901python/tree/master/day29)
+- [day30:Scrapy爬虫框架补充之反爬虫及matplotlib图形绘制案例](https://github.com/lvah/201901python/tree/master/day30)
