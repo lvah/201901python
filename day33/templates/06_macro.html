@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--相当于python里面的定义函数, 后面使用的场景: 分页显示-->
+{%  macro render(id) %}
+    <h1>hello world {{ id }}</h1>
+{% endmacro %}
+
+<!--调用定义好的宏(类似于python中的函数)-->
+{{ render(1) }}
+{{ render(2) }}
+{{ render(3) }}
+{{ render(4) }}
+{{ render(5) }}
+{{ render(6) }}
+
+
+
+{% include  "06_inclued.html"%}
+
+
+
+</body>
+</html>

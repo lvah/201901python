@@ -28,4 +28,4 @@
 - [day28:xpath_wordcloud_spiderMoocProject ](https://github.com/lvah/201901python/tree/master/day28)
 - [day29:Scrapy爬虫框架之项目案例](https://github.com/lvah/201901python/tree/master/day29)
 - [day30:Scrapy爬虫框架补充之反爬虫及matplotlib图形绘制案例](https://github.com/lvah/201901python/tree/master/day30)
-- [day31:pyecharts绘图实例与pandas数据分析案例](https://github.com/lvah/201901python/tree/master/day31)
+- [day31:pyecharts绘图实例与numpy数据分析案例](https://github.com/lvah/201901python/tree/master/day31)
