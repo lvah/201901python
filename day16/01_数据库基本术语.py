@@ -20,4 +20,6 @@ create table employee(id varchar(50), name varchar(50), age int) default  charse
 insert into employee values ('1', '粉条', 10);
 create table if not exists  employee(id varchar(50), name varchar(50), age int) default  charset=utf8;
 
+教务管理系统数据库设计案例: https://www.cnblogs.com/jiwangbujiu/p/5289786.htm
+
 """

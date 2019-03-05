@@ -29,3 +29,7 @@
 - [day29:Scrapy爬虫框架之项目案例](https://github.com/lvah/201901python/tree/master/day29)
 - [day30:Scrapy爬虫框架补充之反爬虫及matplotlib图形绘制案例](https://github.com/lvah/201901python/tree/master/day30)
 - [day31:pyecharts绘图实例与numpy数据分析案例](https://github.com/lvah/201901python/tree/master/day31)
+- [day32:pandas数据分析案例](https://github.com/lvah/201901python/tree/master/day32)
+- [day33:Flask01_路由_视图函数_错误页面处理及Jinja2模板引擎](https://github.com/lvah/201901python/tree/master/day33)
+- [day34:Flask02_Jinja2模板引擎应用案例之实现用户登录注册案例](https://github.com/lvah/201901python/tree/master/day34)
+
