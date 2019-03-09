@@ -33,4 +33,5 @@
 - [day33:Flask01_路由_视图函数_错误页面处理及Jinja2模板引擎](https://github.com/lvah/201901python/tree/master/day33)
 - [day34:Flask02_Jinja2模板引擎应用案例之实现用户登录注册案例](https://github.com/lvah/201901python/tree/master/day34)
 - [day35:Flask03_Flask-wtf表单处理与Flask-Mail邮件处理](https://github.com/lvah/201901python/tree/master/day35)
+- [day36:Flask04_Flask-SQLCHEMY数据库处理与分页页面显示](https://github.com/lvah/201901python/tree/master/day36)
 
