@@ -1,0 +1,185 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title></title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/main.js"></script>
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td style="height:25px; background-color:#f3f3f3; font-weight:bold" valign="top">
+    &nbsp;&nbsp;&nbsp;&nbsp;当前位置：
+    <img src="../../images/arrow.gif" align="absmiddle">&nbsp;&nbsp;成都市企业服务呼叫中心&nbsp;&nbsp;
+    <img src="../../images/arrow.gif" align="absmiddle">&nbsp;&nbsp;扶持项目专区&nbsp;&nbsp;
+    <img src="../../images/arrow.gif" align="absmiddle">&nbsp;&nbsp;服务券申请</td>
+  </tr>
+  <tr>
+    <td style="height:34px; background-image:url(../../images/main_header.gif); border-bottom:1px solid #cfd8e0; padding:0px">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="20" height="34"><img src="../../images/main_headerL.gif" width="20" height="34"></td>
+          <td style="color:#90c8e8;"><img src="../../images/icon_card.gif" width="16" height="16" align="absmiddle">&nbsp;&nbsp;<strong>服务机构回访统计</strong></td>
+          <td align="right" class="white" style="padding-right:20px"><a href="#" class="barBtn" onClick="javascript:history.go(-1);"><img src="../../images/btn_left.gif" align="absmiddle"> 后退</a> <a href="#" class="barBtn" onClick="javascript:history.go(+1);"><img src="../../images/btn_right.gif" align="absmiddle"> 前进</a> <a href="#" class="barBtn"><img src="../../images/btn_refresh.gif" align="absmiddle"> 刷新</a></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td style="height:30px; background-color:#bddbff; border-bottom:1px solid #cfd8e0;"><table width="100%" border="0" cellpadding="3" cellspacing="1" class="table1">
+      <TR>
+        <th width="15%" align="center">统计时间起</th>
+        <td width="30%" class="BGCgray"><input type="text" name="textfield" id="textfield"></td>
+        <th width="15%" align="center">统计时间止</th>
+        <td width="30%" class="BGCgray"><input type="text" name="textfield2" id="textfield2"></td>
+        <th width="10%" align="center"><BUTTON style="HEIGHT:25px" onClick="javascript:if (confirm('查询数据？')) location.href='#';else return;"><img src="../../images/btn_search.gif" width="16" height="16" align="absmiddle"> 统计</BUTTON></th>
+        </TR>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="100%" valign="top">
+    <div style="overflow:auto;height:100%; width:100%">
+      <table width="100%" border="0" cellpadding="3" cellspacing="1" class="table1">
+        <tr>
+          <th rowspan="2">服务机构</th>
+          <th colspan="3">服务态度</th>
+          <th colspan="3">进度</th>
+          <th colspan="3">收费价格</th>
+          </tr>
+        <tr>
+          <th width="8%">很满意</th>
+          <th width="8%">较满意</th>
+          <th width="8%">不满意</th>
+          <th width="8%">较慢</th>
+          <th width="8%">一般</th>
+          <th width="8%">快</th>
+          <th width="8%">低</th>
+          <th width="8%">一般</th>
+          <th width="8%">较贵</th>
+          </tr>
+        <tr>
+          <th>中国民生银行</th>
+          <td align="right">5432</td>
+          <td align="right">5654</td>
+          <td align="right">12546</td>
+          <td align="right">5465</td>
+          <td align="right">2546</td>
+          <td align="right">2545</td>
+          <td align="right">5424</td>
+          <td align="right">2546</td>
+          <td align="right">5454</td>
+          </tr>
+        <tr class="BGCgray">
+          <th>成都农商银行</th>
+          <td align="right">2425</td>
+          <td align="right">5454</td>
+          <td align="right">5465</td>
+          <td align="right">2542</td>
+          <td align="right">5424</td>
+          <td align="right">5465</td>
+          <td align="right">2546</td>
+          <td align="right">2545</td>
+          <td align="right">5424</td>
+          </tr>
+        <tr>
+          <th>渣打银行</th>
+          <td align="right">5424</td>
+          <td align="right">2546</td>
+          <td align="right">5325</td>
+          <td align="right">4225</td>
+          <td align="right">5424</td>
+          <td align="right">5465</td>
+          <td align="right">2546</td>
+          <td align="right">2546</td>
+          <td align="right">2545</td>
+          </tr>
+        <tr class="BGCgray">
+          <th>德思信商务咨询</th>
+          <td align="right">2546</td>
+          <td align="right">4225</td>
+          <td align="right">5424</td>
+          <td align="right">2525</td>
+          <td align="right">5424</td>
+          <td align="right">5324</td>
+          <td align="right">5465</td>
+          <td align="right">5454</td>
+          <td align="right">5465</td>
+          </tr>
+        <tr>
+          <th>泰和泰律师事务所</th>
+          <td align="right">2546</td>
+          <td align="right">2545</td>
+          <td align="right">5424</td>
+          <td align="right">5465</td>
+          <td align="right">2546</td>
+          <td align="right">5424</td>
+          <td align="right">2546</td>
+          <td align="right">5424</td>
+          <td align="right">2546</td>
+          </tr>
+        <tr class="BGCgray">
+          <th>华诚财税</th>
+          <td align="right">5424</td>
+          <td align="right">5465</td>
+          <td align="right">2546</td>
+          <td align="right">5424</td>
+          <td align="right">2546</td>
+          <td align="right">5424</td>
+          <td align="right">2546</td>
+          <td align="right">5424</td>
+          <td align="right">2546</td>
+          </tr>
+        <tr>
+          <th>诚信人力资源市场</th>
+          <td align="right">5465</td>
+          <td align="right">2546</td>
+          <td align="right">2525</td>
+          <td align="right">2546</td>
+          <td align="right">4225</td>
+          <td align="right">2546</td>
+          <td align="right">2525</td>
+          <td align="right">2546</td>
+          <td align="right">25225</td>
+          </tr>
+        <tr class="BGCgray">
+          <th>华保科技</th>
+          <td align="right">2225</td>
+          <td align="right">5424</td>
+          <td align="right">5465</td>
+          <td align="right">2546</td>
+          <td align="right">2225</td>
+          <td align="right">2425</td>
+          <td align="right">5424</td>
+          <td align="right">2525</td>
+          <td align="right">5424</td>
+          </tr>
+        <tr>
+          <th>鼎天软件</th>
+          <td align="right">5424</td>
+          <td align="right">2546</td>
+          <td align="right">5325</td>
+          <td align="right">4225</td>
+          <td align="right">5424</td>
+          <td align="right">5465</td>
+          <td align="right">2546</td>
+          <td align="right">2546</td>
+          <td align="right">2545</td>
+          </tr>
+        <tr class="BGCgray">
+          <th>成都超算中心</th>
+          <td align="right">2546</td>
+          <td align="right">4225</td>
+          <td align="right">5424</td>
+          <td align="right">2525</td>
+          <td align="right">5424</td>
+          <td align="right">5324</td>
+          <td align="right">5465</td>
+          <td align="right">5454</td>
+          <td align="right">5465</td>
+          </tr>
+      </table>
+    </div>
+  </td>
+  </tr>
+</table>
+</body>
+</html>

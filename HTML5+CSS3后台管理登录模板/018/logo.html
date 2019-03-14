@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body style="background:#fff">
+<div class="nav_top">
+	<div class="nav_tcon">
+    	<div class="logoimg"><img src="images/logo.png" /></div>
+        <div class="logotitle">
+        	<span>石材工作</span>
+            <p>Stone Chat</p>
+        </div>
+        <div class="logoname">账号登录</div>
+    </div>
+</div>
+<div class="logo_content">
+	<div class="logo_ccon">
+    	<img class="logobei" src="images/logobei.png" />
+        <div class="logo_enter">
+        	<span style="border-bottom:solid 1px #cfcfcf">请使用石材工作账号进行登陆</span>
+            <span>登录名：</span>
+            <input class="use_name" type="text" placeholder="11位手机号码" />
+            <span>登录密码：<a href="index.html">忘记登录密码？</a></span>
+            <input class="use_password" type="password" placeholder="登录密码" />
+            <button type="button">登&nbsp;&nbsp;录</button>
+            <img class="logo_ewm" src="images/ewm.png" />
+            <div class="logo_zc"><a href="index.html">没有账号？下载石材工作，免费注册</a></div>
+        </div>
+    </div>
+</div>
+<div class="down_info">
+	<div class="information">
+    	<a href="#">关于我们</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">联系我们</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">法律声明</a>
+    </div>
+    <p>石材工作&nbsp;&nbsp;&nbsp;&nbsp;厦门石脉科技</p>
+    <p style="font-size:12px">2015  Stonechat.com版权所有ICP证：鹭B2-22000000    </p>
+    <img style="margin-top:5px" src="images/downbq.png" />
+</div>
+</body>
+</html>

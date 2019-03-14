@@ -1,0 +1,325 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title></title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../js/main.js"></script>
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="3">
+  <tr>
+    <td style="height:25px; background-color:#f3f3f3; font-weight:bold" valign="top">
+    &nbsp;&nbsp;&nbsp;&nbsp;当前位置：
+    <img src="../../images/arrow.gif" align="absmiddle">&nbsp;&nbsp;成都市企业服务呼叫中心&nbsp;&nbsp;
+    <img src="../../images/arrow.gif" align="absmiddle">&nbsp;&nbsp;扶持项目专区&nbsp;&nbsp;
+    <img src="../../images/arrow.gif" align="absmiddle">&nbsp;&nbsp;服务券申请</td>
+  </tr>
+  <tr>
+    <td style="height:34px; background-image:url(../../images/main_header.gif); border-bottom:1px solid #cfd8e0; padding:0px">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="20" height="34"><img src="../../images/main_headerL.gif" width="20" height="34"></td>
+          <td style="color:#90c8e8;"><img src="../../images/icon_card.gif" width="16" height="16" align="absmiddle">&nbsp;&nbsp;<strong>企业信息统计</strong></td>
+          <td align="right" class="white" style="padding-right:20px"><a href="#" class="barBtn" onClick="javascript:history.go(-1);"><img src="../../images/btn_left.gif" align="absmiddle"> 后退</a> <a href="#" class="barBtn" onClick="javascript:history.go(+1);"><img src="../../images/btn_right.gif" align="absmiddle"> 前进</a> <a href="#" class="barBtn"><img src="../../images/btn_refresh.gif" align="absmiddle"> 刷新</a></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td style="height:30px; background-color:#bddbff; border-bottom:1px solid #cfd8e0;"><table width="100%" border="0" cellpadding="3" cellspacing="1" class="table1">
+      <TR>
+        <th width="15%" align="center">统计时间起</th>
+        <td width="30%" class="BGCgray"><input type="text" name="textfield" id="textfield"></td>
+        <th width="15%" align="center">统计时间止</th>
+        <td width="30%" class="BGCgray"><input type="text" name="textfield2" id="textfield2"></td>
+        <th width="10%" align="center"><BUTTON style="HEIGHT:25px" onClick="javascript:if (confirm('查询数据？')) location.href='#';else return;"><img src="../../images/btn_search.gif" width="16" height="16" align="absmiddle"> 统计</BUTTON></th>
+        </TR>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="100%" valign="top">
+    <div style="overflow:auto;height:100%; width:100%">
+      <table width="100%" border="0" cellpadding="3" cellspacing="1" class="table1">
+        <tr>
+          <th rowspan="2">所属区划</th>
+          <th colspan="3">注册资本</br>(单位：万元)</th>
+          <th colspan="3">职工人数</br>(单位：人)</th>
+          <th colspan="3">营业收入总额</br>(单位：万元)</th>
+          <th colspan="3">利润总额</br>(单位：万元)</th>
+          <th colspan="3">纳税总额</br>(单位：万元)</th>
+          </tr>
+        <tr>
+          <th width="6%">0-10</br>(含10)</th>
+          <th width="6%">10-50</br>(含50)</th>
+          <th width="6%">50</br>以上</th>
+          <th width="6%">1-10</th>
+          <th width="6%">11-20</th>
+          <th width="6%">20</br>以上</th>
+          <th width="6%">0-50</br>(含50)</th>
+          <th width="6%">50-100</br>(含100)</th>
+          <th width="6%">100</br>以上</th>
+          <th width="6%">0-50</br>(含50)</th>
+          <th width="6%">50-100</br>(含100)</th>
+          <th width="6%">100万</br>以上</th>
+          <th width="6%">0-10</br>(含10)</th>
+          <th width="6%">10-20</br>(含20)</th>
+          <th width="6%">20</br>以上</th>
+        </tr>
+        <tr>
+          <th><a href="01_list.html" class="black">锦江区</a></th>
+          <td align="right"><a href="01_list.html" class="black">5432</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5454</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2425</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          </tr>
+        <tr class="BGCgray">
+          <th><a href="01_list.html" class="black">青羊区</a></th>
+          <td align="right"><a href="01_list.html" class="black">2425</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2545</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2545</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2545</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2545</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          </tr>
+        <tr>
+          <th><a href="01_list.html" class="black">金牛区</a></th>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2545</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5425</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          </tr>
+        <tr class="BGCgray">
+          <th><a href="01_list.html" class="black">武侯区</a></th>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">5454</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">5454</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">4225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2542</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          </tr>
+        <tr>
+          <th><a href="01_list.html" class="black">成华区</a></th>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5425</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          </tr>
+        <tr class="BGCgray">
+          <th><a href="01_list.html" class="black">高新区</a></th>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">4242</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          </tr>
+        <tr>
+          <th><a href="01_list.html" class="black">温江区</a></th>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">25225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2425</a></td>
+          </tr>
+        <tr class="BGCgray">
+          <th><a href="01_list.html" class="black">新都区</a></th>
+          <td align="right"><a href="01_list.html" class="black">2225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          </tr>
+        <tr>
+          <th><a href="01_list.html" class="black">都江堰</a></th>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2545</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5425</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          </tr>
+        <tr class="BGCgray">
+          <th><a href="01_list.html" class="black">青白江</a></th>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">5454</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">5454</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">4225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2542</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          </tr>
+        <tr>
+          <th><a href="01_list.html" class="black">大邑县</a></th>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5425</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          </tr>
+        <tr class="BGCgray">
+          <th><a href="01_list.html" class="black">邛崃县</a></th>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">4242</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          </tr>
+        <tr>
+          <th><a href="01_list.html" class="black">郫县</a></th>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">25225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2425</a></td>
+          </tr>
+        <tr class="BGCgray">
+          <th><a href="01_list.html" class="black">双流县</a></th>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">4242</a></td>
+          <td align="right"><a href="01_list.html" class="black">5465</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2225</a></td>
+          <td align="right"><a href="01_list.html" class="black">5424</a></td>
+          <td align="right"><a href="01_list.html" class="black">2546</a></td>
+          <td align="right"><a href="01_list.html" class="black">2525</a></td>
+          </tr>
+      </table>
+    </div>
+  </td>
+  </tr>
+</table>
+</body>
+</html>
