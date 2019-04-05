@@ -34,5 +34,5 @@
 - [day34:Flask02_Jinja2模板引擎应用案例之实现用户登录注册案例](https://github.com/lvah/201901python/tree/master/day34)
 - [day35:Flask03_Flask-wtf表单处理与Flask-Mail邮件处理](https://github.com/lvah/201901python/tree/master/day35)
 - [day36:Flask04_Flask-SQLCHEMY数据库处理与分页页面显示](https://github.com/lvah/201901python/tree/master/day36)
-- [day37:Flask05_Flask-Migrate数据库迁移与Flask-Script命令管理插件](https://github.com/lvah/201901python/tree/master/day37)
-
+- [day37:Flask05_Flask-Migrate数据库迁移与Flask-Script命令管理插件](https://github.com/lvah/201901python/tree/master/day37- [day37:Flask05_Flask-Migrate数据库迁移与Flask-Script命令管理插件](https://github.com/lvah/201901python/tree/master/day37)
+- [day43:Django个人博客项目_首页视图实现](https://github.com/lvah/201901python/tree/master/day43)
