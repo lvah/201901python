@@ -1,0 +1,85 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}角色列表{% endblock %}
+{% block content %}
+    <div class="col-lg-11">
+        {#   参考 路径导航:  https://v3.bootcss.com/components/#breadcrumbs           #}
+        <h1>微电影管理系统</h1>
+        <ol class="breadcrumb">
+            <li><a href="{{ url_for('admin.index') }}"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><i class="fa fa-dashboard"></i> 角色管理</li>
+            <li><a href="{{ url_for('admin.role_add') }}"><i class="fa fa-dashboard"></i> 添加角色</a></li>
+            <li><a href="{{ url_for('admin.role_list') }}"><i class="fa fa-dashboard"></i> 角色列表</a></li>
+        </ol>
+
+        <div class="panel panel-default panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-map-marker"></span>
+                    角色列表
+                </h3>
+            </div>
+            <div class="panel-body">
+
+                <br/>
+
+                {#                   登录日志表格#}
+                <table class="table table-bordered">
+                    <tbody>
+                    <tr>
+                        <th>编号</th>
+                        <th>角色名称</th>
+                        <th>添加时间</th>
+                        <th>操作事项</th>
+                    </tr>
+                    {% for role in rolesPageObj.items %}
+                        <tr>
+                            <td>{{ role.id }}</td>
+                            <td>{{ role.name }}</td>
+                            <td>{{ role.addtime }}</td>
+                            <td>
+                                <a class="label label-success" href="{{ url_for('admin.role_edit', id=role.id) }}">编辑</a>
+                                &nbsp;
+                                <a class="label label-danger" href="{{ url_for('admin.role_del', id=role.id) }}">删除</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+
+        <div class="col-md-12 text-center">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="First">
+                            <span aria-hidden="true">首页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">上一页</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1&nbsp;/&nbsp;10</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">下一页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="Last">
+                            <span aria-hidden="true">尾页</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+
+{% endblock %}

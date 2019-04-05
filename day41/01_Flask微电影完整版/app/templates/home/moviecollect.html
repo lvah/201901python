@@ -1,0 +1,79 @@
+{% extends 'home/base.html' %}
+{#
+参考代码:
+    bootstrap媒体对象: https://v3.bootcss.com/components/#panels
+    bootstrap面板对象: https://v3.bootcss.com/components/#panels-heading
+
+#}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+        $(document).ready(function () {
+            $("#md-5").addClass('active');
+        });
+    </script>
+{% endblock %}
+{% block content %}
+    <div class="container-fluid">
+        {% include 'home/usermenu.html' %}
+        <div class="col-lg-9">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-map-marker"></span>&nbsp;收藏电影
+                    </h3>
+                </div>
+                <div class="panel-body">
+
+                    {% for collect in moviecollectsPageObj.items %}
+                        <div class="media" style="border: 1px solid lightgray; margin: 20px 20px">
+                            <div class="media-left">
+
+                                {% if collect.movie.logo %}
+                                    <a href="#">
+                                        <img class="media-object"
+                                             src="{{ url_for('static', filename=app.config['MOVIE_UP_DIR_LAST']+  collect.movie.logo) }}"
+                                             alt="..."
+
+                                             style="max-height: 50px; margin: 0 auto">
+                                    </a>
+                                {% else %}
+                                    <a href="#">
+                                        <img class="media-object"
+                                             src="https://dummyimage.com/50x50/0000/fffff&text={{ session.get('user') }}"
+                                             alt="..."
+
+                                             style="width: 60px; height: 60px">
+                                    </a>
+                                {% endif %}
+
+
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">{{ collect.movie.name }}
+                                    <a href="{{ url_for('home.play', id=collect.movie.id) }}"
+                                       class="label label-primary pull-right">
+                                        <span class="glyphicon glyphicon-play"></span>播放影片
+                                    </a>
+                                </h4>
+                                {{ collect.movie.info }}
+                            </div>
+
+                        </div>
+                    {% endfor %}
+
+
+
+                    {% import 'macro/pages.html' as pages %}
+
+
+                    {{ pages.paginate(moviecollectsPageObj, 'home.moviecollect') }}
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

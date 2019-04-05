@@ -1,0 +1,39 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html'  as wtf %}
+
+
+{% block title %}
+    管理员登录
+{% endblock %}
+
+
+
+{% block content %}
+    <div class="container-fluid">
+        {#让每个页面都可以获取闪现信息闪现#}
+        {% for item in get_flashed_messages() %}
+
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                {{ item }}
+            </div>
+        {% endfor %}
+        <div class="col-lg-4 col-lg-offset-4">
+
+
+            <div class="panel panel-success" style="margin-top: 100px">
+                <div class="panel-heading">
+                    <div class="panel-title text-center">
+
+                        &nbsp;<h3>&nbsp;微电影后台管理登录</h3></div>
+                </div>
+                <div class="panel-body my-panel-body">
+                    {{ wtf.quick_form(form) }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

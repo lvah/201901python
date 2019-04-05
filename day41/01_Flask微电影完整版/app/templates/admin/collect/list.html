@@ -1,0 +1,59 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}收藏列表{% endblock %}
+{% block content %}
+    <div class="col-lg-11">
+        {#   参考 路径导航:  https://v3.bootcss.com/components/#breadcrumbs           #}
+        <h1>微电影管理系统</h1>
+        <ol class="breadcrumb">
+            <li><a href="{{ url_for('admin.index') }}"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><i class="fa fa-dashboard"></i> 收藏管理</li>
+            <li><a href="{{ url_for('admin.collect_list') }}"><i class="fa fa-dashboard"></i> 收藏列表</a></li>
+        </ol>
+
+        <div class="panel panel-default panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-map-marker"></span>
+                    收藏列表
+                </h3>
+            </div>
+            <div class="panel-body">
+
+                <table class="table table-hover">
+
+                    <tbody>
+                    <tr>
+                        <th>编号</th>
+                        <th>电影</th>
+                        <th>用户</th>
+                        <th>添加时间</th>
+                        <th>操作事项</th>
+                    </tr>
+                    {% for moviecollect in moviecollectsPageObj.items %}
+                        <tr>
+                            <td>{{ moviecollect.id }}</td>
+                            <td>{{ moviecollect.movie.name }}</td>
+                            <td>{{ moviecollect.user.name }}</td>
+                            <td>{{ moviecollect.addtime }}</td>
+                            <td>
+
+                                <a href="{{ url_for('admin.collect_del') }}" class="label label-danger">删除</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+
+        {% import 'macro/pages.html' as pages %}
+
+
+        {{ pages.paginate(moviecollectsPageObj, 'admin.collect_list') }}
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'admin/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+    <div class="col-md-8">
+
+
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="{{ url_for('admin.movie_add') }}">添加标签</a></li>
+            <li role="presentation"><a href="{{ url_for('admin.movie_list', page=1) }}">标签列表</a></li>
+        </ul>
+
+        {#    面板   #}
+        <div class="panel panel-default panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-plus-sign"></span>
+                    添加标签</h3>
+            </div>
+            <div class="panel-body">
+
+                {{ wtf.quick_form(form) }}
+
+            </div>
+        </div>
+
+    </div>
+
+
+{% endblock %}

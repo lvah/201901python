@@ -1,0 +1,66 @@
+{% extends 'admin/base.html' %}
+{% block title %}操作日志列表{% endblock %}
+{% block content %}
+
+
+    <div class="col-lg-11">
+
+
+        {#   参考 路径导航:  https://v3.bootcss.com/components/#breadcrumbs           #}
+        <h1>微电影管理系统</h1>
+        <ol class="breadcrumb">
+            <li><a href="{{ url_for('admin.index') }}"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><a href="{{ url_for('admin.logs_operate_log') }}"><i class="fa fa-dashboard"></i> 操作日志列表</a></li>
+            <li><a href="{{ url_for('admin.logs_user_log') }}"><i class="fa fa-dashboard"></i> 会员日志列表</a></li>
+            <li><a href="{{ url_for('admin.logs_admin_log') }}"><i class="fa fa-dashboard"></i> 管理员登录日志列表</a></li>
+
+        </ol>
+
+
+        <div>
+            <div class="panel panel-default panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-map-marker"></span>
+                        操作日志列表
+                    </h3>
+                </div>
+                <div class="panel-body">
+
+                    <br/>
+
+                    {#                   登录日志表格#}
+                    <table class="table table-hover">
+                        <tbody>
+                        <tr>
+                            <th>编号</th>
+                            <th>管理员</th>
+                            <th>操作时间</th>
+                            <th>操作原因</th>
+                            <th>操作IP</th>
+                        </tr>
+
+
+                        {% for adminOplog in adminOplogPageObj.items %}
+                            <tr>
+                                <td>{{ adminOplog.id }}</td>
+                                <td>{{ adminOplog.admin.name }}</td>
+                                <td>{{ adminOplog.addtime }}</td>
+                                <td>{{ adminOplog.content }}</td>
+                                <td>{{ adminOplog.ip }}</td>
+                            </tr>
+                        {% endfor %}
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+{% endblock %}

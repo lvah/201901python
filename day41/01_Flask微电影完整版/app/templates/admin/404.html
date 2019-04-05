@@ -1,0 +1,22 @@
+{% extends 'admin/base.html' %}
+
+
+{% block title %}  404 {% endblock %}
+
+
+{% block content %}
+    <body class="body-404">
+
+    <div class="container">
+
+        <section class="error-wrapper">
+            <i class="icon-404"></i>
+            <h1>404</h1>
+            <h2>page not found</h2>
+            <p class="page-404">Something went wrong or that page doesn’t exist yet. <a href="{{ url_for('admin.index') }}">Return
+                Home</a></p>
+        </section>
+
+    </div>
+
+{% endblock %}

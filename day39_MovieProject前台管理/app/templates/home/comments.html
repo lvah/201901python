@@ -1,0 +1,90 @@
+{% extends 'home/base.html' %}
+{#
+参考代码:
+    bootstrap媒体对象: https://v3.bootcss.com/components/#panels
+    bootstrap面板对象: https://v3.bootcss.com/components/#panels-heading
+
+#}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+        $(document).ready(function () {
+            $("#md-3").addClass('active');
+        });
+    </script>
+{% endblock %}
+{% block content %}
+    <div class="container-fluid">
+
+        {% include 'home/usermenu.html' %}
+
+        <div class="col-md-9">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        &nbsp;评论记录</h3>
+                </div>
+                <div class="panel-body">
+                    {% for i in range(10) %}
+                        <ul class="media-list">
+                            <li class="media">
+                                <div class="media-right">
+                                    <a href="#">
+                                        <img class="media-object"
+                                             src="/static/upload/userFaceImg/20190323_11270930ca91ef76c6a7ef6e9494def1faaf51f1de66f7.jpg"
+                                             alt="..."
+
+                                             style="width: 60px; height: 60px">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            westos评论xxxx电影于2019-10-12 23:00:00
+                                        </div>
+                                        <div class="panel-body">
+                                            评论的内容
+                                        </div>
+                                    </div>
+
+                            </li>
+                        </ul>
+
+                    {% endfor %}
+
+                    <div class="col-md-12 text-center">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="First">
+                                        <span aria-hidden="true">首页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">上一页</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1&nbsp;/&nbsp;10</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">下一页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Last">
+                                        <span aria-hidden="true">尾页</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

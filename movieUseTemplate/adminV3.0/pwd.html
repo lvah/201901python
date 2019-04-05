@@ -1,0 +1,36 @@
+{% extends 'admin/base.html' %}
+{% import 'bootstrap/wtf.html'  as wtf %}
+
+{% block title %}修改密码{% endblock %}
+
+
+{% block content %}
+    <div class="container-fluid">
+
+        <div class="row">
+
+            {#   参考 路径导航:  https://v3.bootcss.com/components/#breadcrumbs           #}
+            <h1>微电影管理系统</h1>
+            <ol class="breadcrumb">
+                <li><a href="{{ url_for('admin.index') }}"><i class="fa fa-dashboard"></i> 首页</a></li>
+                <li class="active">修改密码</li>
+            </ol>
+            {#   面板中心          #}
+            <div class="panel panel-warning">
+                {#   面板头部              #}
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-lock"></span>&nbsp;修改密码
+                    </h3>
+                </div>
+                {#   面板主体               #}
+                <div class="panel-body">
+                    {{ wtf.quick_form(form) }}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+{% endblock %}

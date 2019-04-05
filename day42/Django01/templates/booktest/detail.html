@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<h1>{{ book.btitle }}</h1>
+<hr/>
+{% for hero in heros %}
+{{ hero.hname }}
+{{ hero.gender }}
+{{ hero.hcontent }}
+
+<hr/>
+{% endfor %}
+</body>
+</html>

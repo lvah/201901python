@@ -1,0 +1,72 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}会员详情页{% endblock %}
+{% block content %}
+    <div class="col-lg-11">
+        {#   参考 路径导航:  https://v3.bootcss.com/components/#breadcrumbs           #}
+        <h1>微电影管理系统</h1>
+        <ol class="breadcrumb">
+            <li><a href="{{ url_for('admin.index') }}"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li><i class="fa fa-dashboard"></i> 会员管理</li>
+            {#            <li><a href="{{ url_for('admin.user_list') }}"><i class="fa fa-dashboard"></i> 会员列表</a></li>#}
+        </ol>
+
+        <div class="panel panel-default panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-map-marker"></span>
+                    会员详情页
+                </h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-hover">
+                    <tbody>
+                    <tr>
+                        <td class="td_bd">编号：</td>
+                        <td>{{ user.id }}</td>
+                    </tr>
+                    <tr>
+                        <td class="td_bd">昵称：</td>
+                        <td>{{ user.name }}</td>
+                    </tr>
+                    <tr>
+                        <td class="td_bd">邮箱：</td>
+                        <td>{{ user.email }}</td>
+                    </tr>
+                    <tr>
+                        <td class="td_bd">手机：</td>
+                        <td>{{ user.phone }}</td>
+                    </tr>
+                    <tr>
+                        <td class="td_bd">头像：</td>
+                        <td>
+
+                            {% if user.face %}
+                                <img src="{{ url_for('static', filename=app.config['FC_DIR_LAST'] + user.face) }}"
+                                     class="img-responsive"
+                                     style="max-height: 50px"
+                                     alt="">
+                            {% else %}
+                                未上传头像
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_bd">注册时间：</td>
+                        <td>{{ user.addtime }}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_bd">个性简介：</td>
+                        <td>{{ user.info }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}

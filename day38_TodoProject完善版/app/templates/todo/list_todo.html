@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% block title %}
+
+    任务显示
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+
+            <div class="page-header">
+                <h1>任务显示</h1>
+            </div>
+            <table class="table table-hover">
+                <tr>
+                    <td>任务内容</td>
+                    <td>任务状态</td>
+                    <td>任务分类</td>
+                    <td>所属用户</td>
+                    <td>创建时间</td>
+                    <td>操作</td>
+                </tr>
+
+                {% for todo in todoPageObj.items %}
+
+                    <tr>
+                        {% if todo.status %}
+                            <td>
+                                <del>{{ todo.content }}</del>
+
+                            </td>
+                        {% else %}
+
+                            <td>{{ todo.content }}</td>
+                        {% endif %}
+
+                        <td>
+                            {% if todo.status %}
+                                <a href="{{ url_for('undo', id=todo.id) }}" style="color:green ">
+                                    <span class="glyphicon glyphicon-ok"
+                                          aria-hidden="true">
+                                </span></a>
+                            {% else %}
+                                <a href="{{ url_for('done', id=todo.id) }}" style="color: mediumvioletred"><span
+                                        class="glyphicon glyphicon-remove"
+                                        aria-hidden="true">
+
+                                </span></a>
+                            {% endif %}
+
+                        </td>
+                        <td>{{ todo.category.name }}</td>
+                        <td>{{ todo.user.username }}</td>
+                        {#                        <td>{{ moment(todo.add_time).format('L') }}</td>#}
+                        <td>{{ moment(todo.add_time).fromNow(refresh=True) }}</td>
+                        <td>
+                            <a class="btn btn-success" href="{{ url_for('todo_edit', id=todo.id) }}"
+                               role="button">编辑</a>
+                            <a class="btn btn-danger" href="{{ url_for('todo_delete', id=todo.id) }}"
+                               role="button">删除</a>
+
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+
+
+            {#        # Day36 templates/list.html#}
+
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    {#
+1. 上一页的显示url获取
+    /list/2/ ===== url_for('list', todoPageObj.prev_num)
+
+2. 上一页信息逻辑判断
+    1). 判断是否有上一页信息；
+    2). 如果有， 创建链接;
+    3). 如果没有， 该链接设为不可点击的链接
+
+3. 上一页显示使用的类属性和方法:
+    1). dataObj.has_prev:
+        判断用户是否有上一页？
+        如果有，返回True； 如果没有，返回False;
+
+    2).dataObj.prev_num:
+        获取上一页的页数编号;
+#}
+                    {% if todoPageObj.has_prev %}
+                        <li>
+
+                            <a href="{{ url_for('list', page=todoPageObj.prev_num) }}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    {% else %}
+                        <li class="disabled">
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+
+                    {% endif %}
+
+
+                    {#
+
+详细页的显示
+依次创建每个分页表框:
+    1). 是否为none, 设置类名为diabled；
+    2). 是否为当前页， 设置类名为active；
+    3）.其他，正常设置;
+#}
+
+                    {% for page in todoPageObj.iter_pages() %}
+                        {% if page is none %}
+                            <li class="disabled"><a href="#">......</a></li>
+                        {% elif page == todoPageObj.page %}
+
+                            <li class="active"><a href="{{ url_for('list', page=page) }}">{{ page }}</a></li>
+                        {% else %}
+                            <li><a href="{{ url_for('list', page=page) }}">{{ page }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+
+
+                    {#
+1.下一页信息判断逻辑
+    1). 判断是否有下一页信息；
+    2). 如果有， 创建链接;
+    3). 如果没有， 该链接设为不可点击的链接
+
+2. 使用的方法:
+    1). dataObj.has_next:
+        判断用户是否有下一页？
+        如果有，返回True； 如果没有，返回False;
+    2).dataObj.next_num: 获取下一页的页数编号;
+#}
+                    {% if todoPageObj.has_next %}
+                        <li>
+                            <a href="{{ url_for('list', page=todoPageObj.next_num) }}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    {% else %}
+                        <li class="disabled">
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    {% endif %}
+
+                </ul>
+            </nav>
+
+
+        </div>
+
+    </div>
+
+{% endblock %}

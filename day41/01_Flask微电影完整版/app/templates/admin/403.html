@@ -1,0 +1,24 @@
+{% extends 'admin/base.html' %}
+
+
+
+{% block title %}  403 {% endblock %}
+
+
+{% block content %}
+    <body class="body-500">
+
+    <div class="container">
+
+        <section class="error-wrapper">
+            <i class="icon-500"></i>
+            <h1>Ouch!</h1>
+            <h2>403: 权限受限</h2>
+            <p class="page-500">用户无法访问{{ request.path }}. <a href="{{ url_for('admin.index') }}">返回主页</a>
+            </p>
+        </section>
+
+    </div>
+
+
+{% endblock %}

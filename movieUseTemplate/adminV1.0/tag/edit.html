@@ -1,0 +1,20 @@
+{% extends 'admin/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+
+{% block title %}编辑标签{% endblock %}
+{% block content %}
+    {#    面板   #}
+    <div class="panel panel-default panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title"><span class="glyphicon glyphicon-plus-sign"></span>
+                编辑标签</h3>
+        </div>
+        <div class="panel-body">
+
+            {{ wtf.quick_form(form) }}
+
+        </div>
+    </div>
+
+{% endblock %}

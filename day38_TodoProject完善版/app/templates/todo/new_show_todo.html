@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    图表分析
+{% endblock %}
+
+
+{% block scripts %}
+    {{ super() }}
+    <script type="text/javascript">
+
+
+        $(function () {
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main'));
+            $.ajax({
+                url: '/get_data/',
+                success: function (data) {
+                    json_data = JSON.parse(data)
+
+                    // 指定图表的配置项和数据
+                    var option = {
+                        title: {
+                            text: '任务统计分析'
+                        },
+                        tooltip: {
+                            trigger: 'item',
+                            formatter: "{a} <br/>{b}: {c} ({d}%)"
+                        },
+                        legend: {
+                            orient: 'vertical',
+                            x: 'right',
+                            data: json_data['info']
+                        },
+                        series: [
+                            {
+                                name: '访问来源',
+                                type: 'pie',
+                                radius: ['50%', '70%'],
+                                avoidLabelOverlap: false,
+                                label: {
+                                    normal: {
+                                        show: false,
+                                        position: 'center'
+                                    },
+                                    emphasis: {
+                                        show: true,
+                                        textStyle: {
+                                            fontSize: '20',
+                                            fontWeight: 'bold'
+                                        }
+                                    }
+                                },
+                                labelLine: {
+                                    normal: {
+                                        show: false
+                                    }
+                                },
+                                data: json_data['count']
+                            }
+                        ]
+
+                    };
+                    // 使用刚指定的配置项和数据显示图表。
+                    myChart.setOption(option);
+
+                }
+            })
+
+
+
+             // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('cpu'));
+            $.ajax({
+                url: '/get_cpu/',
+                success: function (data) {
+                    json_data = JSON.parse(data)
+
+                    // 指定图表的配置项和数据
+                    var option = {
+                        title: {
+                            text: 'CPU占有率'
+                        },
+                        tooltip: {
+                            trigger: 'item',
+                            formatter: "{a} <br/>{b}: {c} ({d}%)"
+                        },
+                        legend: {
+                            orient: 'vertical',
+                            x: 'right',
+                            data: json_data['info']
+                        },
+                        series: [
+                            {
+                                name: '访问来源',
+                                type: 'pie',
+                                radius: ['50%', '70%'],
+                                avoidLabelOverlap: false,
+                                label: {
+                                    normal: {
+                                        show: false,
+                                        position: 'center'
+                                    },
+                                    emphasis: {
+                                        show: true,
+                                        textStyle: {
+                                            fontSize: '20',
+                                            fontWeight: 'bold'
+                                        }
+                                    }
+                                },
+                                labelLine: {
+                                    normal: {
+                                        show: false
+                                    }
+                                },
+                                data: json_data['count']
+                            }
+                        ]
+
+                    };
+                    // 使用刚指定的配置项和数据显示图表。
+                    myChart.setOption(option);
+
+                }
+            })
+        })
+
+
+
+
+
+
+    </script>
+
+{% endblock %}
+{% block content %}
+
+    <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+
+            <div class="page-header">
+                任务完成度分析
+            </div>
+            <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+            <div id="main" style="width: 500px;height:500px;
+    border: 1px solid gray"></div>
+
+        </div>
+        <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+        <div id="cpu" style="width: 500px;height:500px;
+    border: 1px solid gray"></div>
+
+    </div>
+
+    </div>
+
+{% endblock %}

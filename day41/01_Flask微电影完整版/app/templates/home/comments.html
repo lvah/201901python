@@ -1,0 +1,83 @@
+{% extends 'home/base.html' %}
+{#
+参考代码:
+    bootstrap媒体对象: https://v3.bootcss.com/components/#panels
+    bootstrap面板对象: https://v3.bootcss.com/components/#panels-heading
+
+#}
+
+{% block scripts %}
+    {{ super() }}
+    <script>
+        $(document).ready(function () {
+            $("#md-3").addClass('active');
+        });
+    </script>
+{% endblock %}
+{% block content %}
+    <div class="container-fluid">
+
+        {% include 'home/usermenu.html' %}
+
+        <div class="col-md-9">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        &nbsp;评论记录</h3>
+                </div>
+                <div class="panel-body">
+                    {% for comment in commentsPageObj.items %}
+                        <ul class="media-list">
+                            <li class="media">
+                                <div class="media-right">
+
+                                    {% if comment.user.face %}
+                                        <a href="#">
+                                            <img class="media-object"
+                                                 src="{{ url_for('static', filename=app.config['FC_DIR_LAST']+ comment.user.face) }}"
+                                                 alt="..."
+
+                                                 style="max-height: 50px">
+                                        </a>
+                                    {% else %}
+                                        <a href="#">
+                                            <img class="media-object"
+                                                 src="https://dummyimage.com/50x50/0000/fffff&text={{ session.get('user') }}"
+                                                 alt="..."
+
+                                                 style="width: 60px; height: 60px">
+                                        </a>
+                                    {% endif %}
+
+
+                                </div>
+                                <div class="media-body">
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            {{ comment.user.name }}评论{{ comment.movie.name }}》电影于{{ comment.addtime }}
+                                        </div>
+                                        <div class="panel-body">
+                                            {{ comment.content }}
+                                        </div>
+                                    </div>
+
+                            </li>
+                        </ul>
+
+                    {% endfor %}
+
+
+                    {% import 'macro/pages.html' as pages %}
+
+
+                    {{ pages.paginate(commentsPageObj, 'home.comments') }}
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
