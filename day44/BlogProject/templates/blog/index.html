@@ -1,0 +1,73 @@
+{% extends 'blog/base.html' %}
+
+
+
+{% block title %}
+    博客首页
+{% endblock %}
+{% block main %}
+
+    {% if posts %}
+
+        {% for post in posts %}
+            <article class="post post-1">
+                <header class="entry-header">
+                    <h1 class="entry-title">
+                        <a href="{% url 'detail'  post.id %}">{{ post.title }}</a>
+                    </h1>
+                    <div class="entry-meta">
+                        <span class="post-category"><a href="#">{{ post.category }}</a></span>
+                        <span class="post-date"><a href="#"><time class="entry-date"
+                                                                  datetime="2012-11-09T23:15:57+00:00">{{ post.modified_time }}</time></a></span>
+                        <span class="post-author"><a href="#">{{ post.author }}</a></span>
+                        <span class="comments-link"><a href="#">{{ post.comment_num }} 评论</a></span>
+                        <span class="views-count"><a href="#">{{ post.read_num }} 阅读</a></span>
+                    </div>
+                </header>
+                <div class="entry-content clearfix">
+                    <p>{{ post.body | slice:'99' }}......</p>
+                    <div class="read-more cl-effect-14">
+                        {#                    可以使用， 但不建议， 为来更新网站时维护麻烦；#}
+                        {#                    <a href="/blog/detail/{{ post.id }}/" class="more-link">继续阅读 <span class="meta-nav">→</span></a>#}
+                        <a href="{% url 'detail'  post.id %}" class="more-link">继续阅读 <span class="meta-nav">→</span></a>
+                    </div>
+                </div>
+            </article>
+        {% endfor %}
+
+    {% else %}
+
+        <h3 style="color: green"> 当前无符合条件的博客</h3>
+    {% endif %}
+
+    <!-- 简单分页效果
+    <div class="pagination-simple">
+        <a href="#">上一页</a>
+        <span class="current">第 6 页 / 共 11 页</span>
+        <a href="#">下一页</a>
+    </div>
+    -->
+
+
+
+    <ul class="pager">
+        {% if postObj.has_previous %}
+            <li class="previous"><a href="{% url 'index' %}?page={{ postObj.previous_page_number }}">&larr;
+                上一页</a></li>
+
+            {% else %}
+                        <li class="previous"><a  class="disabled">&larr;
+                上一页</a></li>
+        {% endif %}
+
+    {% if postObj.has_next %}
+        <li class="next"><a href="{% url 'index' %}?page={{ postObj.next_page_number }}">下一页 &rarr;</a></li>
+
+    {% else %}
+     <li class="next"><a>下一页 &rarr;</a></li>
+    {% endif %}
+    </ul>
+
+
+
+{% endblock %}
