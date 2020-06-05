@@ -14,7 +14,7 @@ constantly==15.1.0
 cryptography==2.4.2
 cssselect==1.0.3
 cycler==0.10.0
-Django==2.1.7
+Django==2.2.13
 dominate==2.3.5
 dukpy==0.2.2
 echarts-china-cities-pypkg==0.0.9
